@@ -8,7 +8,7 @@ export default function Auth() {
     try {
         const response = await signInWithPopup(auth, provider)
         console(response)
-    } catch (error) {
+    } catch (error) { 
         console.log(error)
     }
     ;
