@@ -7,6 +7,9 @@ export default function Auth() {
   const handleGoogleAuth = async () => {
     try {
         const response = await signInWithPopup(auth, provider)
+        const User = response.user
+        const name = User.displayName
+        const email = User.email
         console(response)
     } catch (error) { 
         console.log(error)
